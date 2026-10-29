@@ -3,47 +3,52 @@
    Escreva aqui os estilos dos blocos abaixo, seguindo o roteiro.
    ========================================================= */
 
+
 /* ---------- 1. TOPO: logo | menu | botão ---------- */
 /* .topo, .topo-conteudo, .menu ul */
 .topo {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: rgba(14,14,15, 0.92);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--cinza);
-
+   position: sticky;
+   top: 0;
+   z-index: 10;
+   background: rgb(14, 14, 15, 0.92);
+   backdrop-filter: blur(8px);
+   border-bottom: 1px solid var(--cinza);
 }
+
 
 .topo-conteudo {
    display: flex;
-   justify-content: space-between; 
+   justify-content: space-between;
    align-items: center;
    gap: 1.5rem;
    padding-block: 1rem;
 }
+
 
 .menu ul {
    display: flex;
    gap: 2rem;
 }
 
+
 .menu a {
-   font-size: 0.88rem;
+   font-style: 0.88rem;
    font-weight: 500;
-   transition: color 0.2s;
+   transition: color 0.25;
 }
+
 
 .menu a:hover {
    color: var(--ouro);
-
 }
+
 
 /* ---------- 2. HERO: texto | imagem ---------- */
 /* .hero-conteudo, .hero-texto, .hero-imagem, .hero-botoes, .hero-numeros */
 .hero {
-   padding: 5rem 0 6rem;
+   padding: 5rem 0 6rem 0;
 }
+
 
 .hero-conteudo {
    display: flex;
@@ -51,59 +56,71 @@
    gap: 4rem;
 }
 
+
 .hero-texto {
    flex: 1 1 50%;
 }
 
+
 .hero-texto h1 {
    margin-bottom: 1.4rem;
 }
+
 
 .hero-descricao {
    max-width: 480px;
    margin-bottom: 2rem;
 }
 
-.hero-botoes{
+
+.hero-botoes {
    display: flex;
    flex-wrap: wrap;
    gap: 1rem;
    margin-bottom: 3rem;
 }
 
+
 .hero-imagem {
    flex: 1 1 42%;
 }
 
+
 .hero-imagem img {
    width: 100%;
-   aspect-ratio: 4 / 5;
+   aspect-ratio: 4/5;
    object-fit: cover;
    border-radius: 200px 200px var(--raio) var(--raio);
-   box-shadow: 0 30px 60px rgba(0,0,0, 0.5);
+   box-shadow: 0 30px 60px rgb(0, 0, 0, 0.5);
 }
 
+
 .hero-numeros {
-display: flex;
-gap: 2.5rem;
-padding-top: 1.8rem;
-border-top: 0 30px 1px solid var(--cinza);
+   display: flex;
+   gap: 2.5rem;
+   padding-top: 1.8rem;
+   border-top: 0 30px 1px solid var(--cinza);
 }
+
 
 .hero-numeros li {
    display: flex;
    flex-direction: column;
 }
 
+
 .hero-numeros strong {
-   font-family: (var(--fonte-titulo));
+   font-family: var(--fonte-titulo);
    font-size: 1.9rem;
-   color: var(--ouro)
+   color: var(--ouro);
 }
 
-.hero-numeros span{
-   font-size: 0.8rem;
+
+.hero-numeros span {
+   font-size: 0.8srem;
 }
+
+
 /* ---------- 3. CARDS DE SERVIÇOS ---------- */
 /* .cards-servicos, .card-servico, .card-rodape */
 .cards-servicos {
@@ -112,68 +129,77 @@ border-top: 0 30px 1px solid var(--cinza);
    gap: 1.5rem;
 }
 
+
 .card-servico {
-   position: relativa;
+   position: relative;
    flex: 1 1 240px;
    display: flex;
    flex-direction: column;
    gap: 0.9rem;
    padding: 2rem 1.7rem;
-   background: var(--grafite);
    border: 1px solid var(--cinza);
+   background: var(--grafite);
    transition: transform 0.25s, border-color 0.25s;
 }
 
+
 .card-servico:hover {
-   transform: translateY(-6px)
+   transform: translateY(-6px);
    border-color: var(--ouro);
 }
 
-.card-numero {
-   font-family: var (--fonte-titulo);
-   font-size: 2.4rem;
-   color: var (--ouro)
-   opacity: 0.5;
-   line-height: 1;
 
+.card-numero {
+   position: absolute;
+   top: 1.5rem;
+   right: 1.5rem;
+   font-family: var(--fonte-titulo);
+   font-size: 2.5rem;
+   color: var(--ouro);
 }
 
+
 .card-rodape {
-   margin-top: auto;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding-top:  1.2rem;
+   margin-top: auto;
+   padding-top: 1.2rem;
    border-top: 1px solid var(--cinza);
 }
 
-.card-preco  {
+
+.card-preco {
    display: flex;
    flex-direction: column;
 }
 
+
 .card-preco strong {
-  font-size: .4rem;
-  color: var(--creme);
-} 
+   font-size: 1.4rem;
+   color: var(--creme);
+}
 
 
 .card-preco small {
    font-size: 0.75rem;
+   color: var(--cinza);
 }
 
 
 .card-destaque {
    border-color: var(--ouro);
-   background: linear-gradient(160deg, 
-   #221d22, var(--grafite));
+   background: linear-gradient(160deg, #221d12 ,var(--grafite));
 }
 
-.card-destaque .card-selo{
+
+.card-destaque .card-selo {
    position: absolute;
    top: 1.2rem;
    right: 1.2rem;
 }
+
+
 /* ---------- 4. PLANOS ---------- */
 /* .planos, .plano, .plano-destaque */
 .planos {
@@ -182,29 +208,33 @@ border-top: 0 30px 1px solid var(--cinza);
    gap: 1.5rem;
 }
 
+
 .plano {
    position: relative;
-   flex:1;
+   flex: 1;
    display: flex;
    flex-direction: column;
-   gap:1.1rem;
+   gap: 1.1rem;
    padding: 2.2rem 2rem;
    background: var(--preto);
    border-radius: var(--raio);
 }
 
+
 .plano-preco strong {
    font-family: var(--fonte-titulo);
-   font-size: 2.4rem;
-   color: var(--creme); 
+   font-size: 2.5rem;
+   color: var(--creme);
 }
+
 
 .plano-lista {
    display: flex;
    flex-direction: column;
-   gap:0.7rem;
-   margin-bottom: 1rem;
+   gap: 0.7rem;
+   margin-top: 1.6rem;
 }
+
 
 .plano-lista li {
    padding-left: 1.6rem;
@@ -212,34 +242,41 @@ border-top: 0 30px 1px solid var(--cinza);
    font-size: 0.92rem;
 }
 
+
 .plano-lista li::before {
-   content:"✓";
+   content: "✓";
    position: absolute;
    left: 0;
    color: var(--ouro);
    font-weight: 700;
 }
 
-.plano-btn {
+
+.plano .btn{
    margin-top: auto;
 }
 
-.plano-destaque{
-   border-color: var(--ouro);
-   transform: scale(1.05);
-   box-shadow: 0 25px 50px rgb(251,164,92,0.12);
-}
 
 .plano-destaque {
+   border-color: var(--ouro);
+   transform: scale(1.05);
+   box-shadow: 0 25px 50px rgb(251, 164, 92, 0.12);
+} 
+
+
+.plano-destaque .card-selo {
    align-self: flex-start;
 }
+
+
 /* ---------- 5. RODAPÉ ---------- */
 /* .rodape-conteudo, .rodape-contato, .rodape-links */
 .rodape {
    background: #09090a;
    padding-top: 4rem;
-   border-top: 1px solid var (--cinza);
+   border-top: 1px solid var(--cinza);
 }
+
 
 .rodape-conteudo {
    display: flex;
@@ -249,12 +286,14 @@ border-top: 0 30px 1px solid var(--cinza);
    padding-bottom: 3rem;
 }
 
+
 .rodape-marca {
-  max-width: 200px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.8;
+   max-width: 200px;
+   display: flex;
+   flex-direction: column;
+   gap: 0.8rem;
 }
+
 
 .rodape-contato {
    display: flex;
@@ -263,12 +302,13 @@ border-top: 0 30px 1px solid var(--cinza);
    font-size: 0.92rem;
 }
 
+
 .rodape-contato a:hover,
-.rodape-links a:hover 
- 
-{ 
-   color :var(--ouro)
+.rodape-links a:hover
+{
+   color: var(--ouro);
 }
+
 
 .rodape-links {
    display: flex;
@@ -277,9 +317,10 @@ border-top: 0 30px 1px solid var(--cinza);
    font-size: 0.92rem;
 }
 
+
 .rodape-copy {
- text-align: center;
- padding-block: 1.4rem;
- border-top: 1px solid var(--cinza);
- font-size: 0.88rem;
+   text-align: center;
+   padding-block: 1.4rem;
+   border-top: 1px solid var(--cinza);
+   font-size: 0.8rem;
 }
